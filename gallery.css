@@ -1,0 +1,139 @@
+body {
+  overflow-x: hidden;
+}
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  display: inline-block;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Roboto';
+  transition: background-color .60s, color .30s;
+}
+
+li a:hover:not(.active) {
+  background-color: #ceb290;
+}
+
+.active {
+  background-color: #af9c84;
+}
+
+.title{
+  display: inline-block;
+  overflow: hidden;
+  font-size: 20px;
+  margin-left: 25px;
+}
+.nav_icon{
+  width: 75px;
+  margin-top: 0 px;
+}
+.container_nav,.container_nav1{
+  display: inline-block;
+}
+.container_nav {
+  margin-right: 230px;
+  margin-left: 30px;
+}
+.span{
+  color: #5f432c;
+  font-family: 'Crimson Pro';
+  font-size: 38px;
+  overflow: hidden;
+}
+.form{
+  display: inline-block;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.search-bar{
+  border-radius: 15px;
+  margin-left:10px;
+  padding: 10px 10px 10px 10px;
+  border : 1px solid black;
+  width: 250px;
+  float: left;
+  background: white;
+  font-size: 17px;
+
+}
+form.form button {
+  float: left;
+  width: 50px;
+  margin-left:10px;
+  padding: 10px;
+  background: #ceb290;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; 
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color .60s, color .30s;
+}
+form.form button:hover {
+
+  background: #694e2d;
+}
+form.form::after {
+  content: "";
+  clear: both;
+  display: table;
+} 
+.pic1,.pic2,.pic3,.pic4{
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    width: 20%;
+    border-radius: 5px;
+    border: 2px #5f432c solid;
+}
+
+.pic5,.pic6,.pic7,.pic8 {
+    margin-left: 50px;
+    width: 20%;
+    border-radius: 15px;
+    border: 2px #5f432c solid;
+}
+.pic9,.pic10,.pic11,.pic12 {
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    width: 20%;
+    border-radius: 15px;
+    border: 2px #5f432c solid;
+}
+.pic13,.pic14,.pic15,.pic16 {
+    margin-left: 50px;
+    width: 20%;
+    border-radius: 15px;
+    border: 2px #5f432c solid;
+}
+.container1,.container2 {
+    width: 100%;
+}
+.container3,.container4 {
+    width: 100%;
+}
+hr
+{
+    background: rgb(206, 178, 144);
+    padding: 30px;
+    width: 100%;
+    margin-top: 30px;
+}

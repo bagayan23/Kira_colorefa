@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kira_colorefa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="products.css">
+    <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Crimson Pro' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="image_kira_colorefa/logo.ico">
+</head>
+<body>
+    <div class="container_nav">
+        <img class="nav_icon" src="image_kira_colorefa/logo.ico">
+        <p class="title"><span class="span">Kira_colorefa</span></p>
+    </div>
+
+    <div class="container_nav1">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About us.html">About us</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Products.html" class="active">Products</a></li>
+        </ul>
+        <form class="form" method="get" action="Products.html">
+            <input class="search-bar" name="query" type="search" placeholder="Search Item">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+
+    <div class="carousel-container">
+        <div class="fspace carousel-item">
+            <!-- Product 1 content here -->
+            <div class="container1">
+                <img class="pic1" src="image_kira_colorefa/Picture1.png">
+                <h2 class="heading1">CHIMMY KEYCHAIN</h2>
+                <p class="text1">Upgrade your style with our Chimmy Keychain, an accessory inspired by the beloved BTS character, perfect for showcasing your ARMY side.</p>
+                <button class="but1"><a class="butln" href="https://www.instagram.com/p/CdJ2YyFB6CX/?igshid=MzRlODBiNWFlZA==">Shop Now</a></button>
+            </div>
+        </div>
+
+        <div class="bspace carousel-item">
+            <!-- Product 2 content here -->
+            <div class="container2">
+                <img class="pic2" src="image_kira_colorefa/Picture2.png">
+                <h2 class="heading2">BT21 KEYCHAIN</h2>
+                <p class="text2">With our BT21 keychain collection, you can carry the charm of the entire BT21 universe with you wherever you go.</p>
+                <button class="but2"><a class="butln" href="https://www.instagram.com/p/CdFcCCWlQ__/?igshid=MzRlODBiNWFlZA==">Shop Now</a></button>
+            </div>
+        </div>
+
+        <!-- Add other product containers as needed -->
+
+        <!-- Navigation buttons -->
+        <button class="prevBtn">Previous</button>
+        <button class="nextBtn">Next</button>
+    </div>
+
+    <!-- Slick Carousel Script -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel-container').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+
+            // Previous button
+            $('.prevBtn').on('click', function(){
+                $('.carousel-container').slick('slickPrev');
+            });
+
+            // Next button
+            $('.nextBtn').on('click', function(){
+                $('.carousel-container').slick('slickNext');
+            });
+        });
+    </script>
+</body>
+</html>

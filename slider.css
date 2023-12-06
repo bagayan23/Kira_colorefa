@@ -1,0 +1,160 @@
+body {
+  overflow: hidden;
+}
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  display: inline-block;
+  
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Roboto';
+  transition: background-color .60s, color .30s;
+}
+
+li a:hover:not(.active) {
+  background-color: #ceb290;
+}
+
+.active {
+  background-color: #af9c84;
+}
+
+.title{
+  display: inline-block;
+  overflow: hidden;
+  font-size: 20px;
+  margin-left: 25px;
+}
+.nav_icon{
+  width: 75px;
+  margin-top: 0 px;
+}
+.container_nav,.container_nav1{
+  display: inline-block;
+}
+.container_nav {
+  margin-right: 230px;
+  margin-left: 30px;
+}
+.span{
+  color: #5f432c;
+  font-family: 'Crimson Pro';
+  font-size: 38px;
+  overflow: hidden;
+}
+.form{
+  display: inline-block;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.search-bar{
+  border-radius: 15px;
+  margin-left:10px;
+  padding: 10px 10px 10px 10px;
+  border : 1px solid black;
+  width: 250px;
+  float: left;
+  background: white;
+  font-size: 17px;
+
+}
+form.form button {
+  float: left;
+  width: 50px;
+  margin-left:10px;
+  padding: 10px;
+  background: #ceb290;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; 
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color .60s, color .30s;
+}
+form.form button:hover {
+
+  background: #694e2d;
+}
+form.form::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.header2 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.header-image img {
+  width: 50%;
+  height: 250px; 
+  border-radius: 50px;
+  border: 5px solid #A9907E;
+} 
+
+.slider {
+  width: 50%;
+  max-width: 800px;
+  height: 220px;
+  overflow: hidden;
+  margin: auto;
+  border: 5px solid #A9907E;
+  border-radius: 50px;
+  position: relative;
+  margin-top: 40px;
+}
+
+figure {
+  position: relative;
+  left: 0;
+  width: 400%;
+  animation: 30s slide infinite;
+  margin: 0;
+  transition: left 0.5s ease;
+}
+
+.slide {
+  position: relative;
+  width: 25%;
+  float: left;
+}
+
+.slide img {
+  width: 98%; 
+  height: 65%;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0%, 100% {
+      left: 0;
+  }
+  25%, 90% {
+      left: -100%;
+  }
+  35%, 75% {
+      left: -200%;
+  }
+  45%, 65% {
+      left: -300%;
+  }
+  55% {
+      left: -400%;
+  }
+}
